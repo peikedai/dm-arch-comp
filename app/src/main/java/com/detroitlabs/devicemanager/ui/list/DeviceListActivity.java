@@ -6,6 +6,7 @@ import android.arch.lifecycle.ViewModelProviders;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.util.AsyncListUtil;
 import android.support.v7.widget.LinearLayoutManager;
 
 import com.detroitlabs.devicemanager.R;
@@ -35,5 +36,6 @@ public class DeviceListActivity extends LifecycleActivity {
                 deviceListAdapter.setData(devices);
             }
         });
+
     }
 }
